@@ -4,5 +4,5 @@ Cookiecutter template for bootstrapping NuxtJS applications in SSR mode
 
 ## Usage 
 ```sh
-cookiecutter https://github.com/DCC-BS/nuxt-project-template.git`
+cookiecutter https://github.com/DCC-BS/nuxt-project-template.git
 ```
