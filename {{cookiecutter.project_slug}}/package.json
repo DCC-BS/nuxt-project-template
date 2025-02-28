@@ -8,7 +8,7 @@
         "start": "nuxt start",
         "generate": "nuxt generate",
         "lint:js": "eslint --ext \".ts,.js,.vue\" .",
-        "lint": "yarn lint:js",
+        "lint": "bun lint:js",
         "prettier": "prettier --write \"**/*.{js,ts,vue,json,css,scss,md}\""
     },
     "dependencies": {
