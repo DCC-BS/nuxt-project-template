@@ -3,6 +3,7 @@
     "app_title": "Example application",
     "_copy_without_render": [
         "components/*vue",
-        "pages/*vue"
+        "pages/*vue",
+        ".github/workflows/*yml"
     ]
 }
