@@ -1,5 +1,8 @@
 {
-  "project_slug": "demo-app",
-  "app_title": "Example application",
-  "_copy_without_render": ["components/*vue", "pages/*vue"]
+    "project_slug": "demo-app",
+    "app_title": "Example application",
+    "_copy_without_render": [
+        "components/*vue",
+        "pages/*vue"
+    ]
 }
