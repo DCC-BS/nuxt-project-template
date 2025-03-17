@@ -13,7 +13,7 @@
     },
     "dependencies": {
         "@dcc-bs/common-ui.bs.js": "^0.1.2",
-        "@nuxt/eslint": "1.1.0",
+        "@nuxt/eslint": "1.2.0",
         "@nuxt/ui": "^3.0.0",
         "@nuxtjs/i18n": "^9.2.1",
         "nuxt": "^3.15.4",
