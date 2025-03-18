@@ -1,7 +1,7 @@
 {
     "project_slug": "demo-app",
     "app_title": "Example application",
-    "cookiecutter.github_token": "YOUR_GITHUB_TOKEN",
+    "github_token": "YOUR_GITHUB_TOKEN",
     "_copy_without_render": [
         "components/*vue",
         "pages/*vue",

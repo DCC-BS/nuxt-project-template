@@ -27,6 +27,7 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@nuxtjs/i18n',
         '@dcc-bs/common-ui.bs.js',
+        '@dcc-bs/logger.bs.js',
         '@nuxt/eslint',
     ],
     devtools: { enabled: true },
