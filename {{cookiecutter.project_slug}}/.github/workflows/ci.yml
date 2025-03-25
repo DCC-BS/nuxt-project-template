@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: "22.x"
           registry-url: "https://npm.pkg.github.com"
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
       - name: Install Bun
         run: npm install -g bun
       - run: bun install
@@ -24,6 +28,8 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: bun generate
       - run: bun run test --coverage
+      - name: Run Biome
+        run: biome ci .
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
         with:

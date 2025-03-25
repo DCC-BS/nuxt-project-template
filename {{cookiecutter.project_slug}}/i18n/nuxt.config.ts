@@ -23,18 +23,17 @@ export default defineNuxtConfig({
             ],
         },
     },
+    ui: {
+        colorMode: false,
+    },
     modules: [
         '@nuxt/ui',
         '@nuxtjs/i18n',
         '@dcc-bs/common-ui.bs.js',
         '@dcc-bs/logger.bs.js',
-        '@nuxt/eslint',
     ],
     devtools: { enabled: true },
     css: ['~/assets/css/main.css'],
-    colorMode: {
-        preference: 'light',
-    },
     // localization
     i18n: {
         locales: ['en', 'de'],
