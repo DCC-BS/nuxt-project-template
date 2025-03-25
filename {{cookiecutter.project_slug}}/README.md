@@ -1,6 +1,4 @@
 # {{cookiecutter.project_slug}}
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/DCC-BS/{{cookiecutter.project_slug}})
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/DCC-BS/{{cookiecutter.project_slug}}/ci.yml)
-[![codecov](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}}/graph/badge.svg)](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}})
-
+[![Build & Test](https://github.com/DCC-BS/{{cookiecutter.project_slug}}/actions/workflows/ci.yml/badge.svg)](https://github.com/DCC-BS/{{cookiecutter.project_slug}}/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}}/graph/badge.svg?token=BYAB6V1C8B)](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}})
