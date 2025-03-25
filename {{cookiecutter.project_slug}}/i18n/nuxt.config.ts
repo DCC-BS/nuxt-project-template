@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     // Define app head configuration
     app: {
         head: {
-            titleTemplate: '%s | {{ cookiecutter.app_title }}',
+            titleTemplate: '{{ cookiecutter.app_title }}',
             htmlAttrs: {
                 lang: 'de',
             },
@@ -16,9 +16,9 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'apple-mobile-web-app-title',
-                    content: 'My Test App',
+                    content: '{{ cookiecutter.app_title }}',
                 },
-                { name: 'application-name', content: 'My Test App' },
+                { name: 'application-name', content: '{{ cookiecutter.app_title }}' },
                 { name: 'msapplication-config', content: '/browserconfig.xml' },
             ],
         },
