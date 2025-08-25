@@ -1,4 +1,3 @@
 # {{cookiecutter.project_slug}}
 
-[![Build & Test](https://github.com/DCC-BS/{{cookiecutter.project_slug}}/actions/workflows/ci.yml/badge.svg)](https://github.com/DCC-BS/{{cookiecutter.project_slug}}/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}}/graph/badge.svg?token=BYAB6V1C8B)](https://codecov.io/gh/DCC-BS/{{cookiecutter.project_slug}})
+![GitHub License](https://img.shields.io/github/license/DCC-BS/bs-translator-frontend) [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)

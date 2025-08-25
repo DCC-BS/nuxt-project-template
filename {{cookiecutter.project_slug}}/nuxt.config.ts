@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
+    build: {
+        analyze: false,
+    },
     runtimeConfig: {
         githubToken: process.env.GITHUB_TOKEN,
         apiUrl: process.env.API_URL,
@@ -65,6 +68,6 @@ export default defineNuxtConfig({
             },
         ],
         defaultLocale: "de",
-        strategy: "prefix_except_default",
+        strategy: "no_prefix",
     },
 });
