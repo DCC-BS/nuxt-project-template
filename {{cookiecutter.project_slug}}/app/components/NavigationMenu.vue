@@ -21,7 +21,7 @@ const items = computed<DropdownMenuItem[]>(() =>
     <div class="flex justify-between gap-2 p-2 w-full z-50">
         <DisclaimerButton variant="ghost" />
         <div class="text-md md:text-4xl font-bold bg-gradient-to-r text-cyan-600 hover:text-cyan-600">
-            {{ t("navigation.app") }}
+            {{ "{{" }} t("navigation.app") {{ "}}" }}
         </div>
         <UDropdownMenu :items="items">
             <UButton variant="ghost" :label="t('navigation.languages')" icon="i-lucide-languages">
