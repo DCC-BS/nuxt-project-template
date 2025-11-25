@@ -1,31 +1,38 @@
 <script lang="ts" setup>
-import { DisclaimerButton } from "@dcc-bs/common-ui.bs.js";
 import type { DropdownMenuItem } from "@nuxt/ui";
 
-const { t, locale, locales, setLocale } = useI18n();
+// Add translation hook
+const { t } = useI18n();
+const { data, signOut } = useAuth();
+const { executeCommand } = useCommandBus();
 
-const availableLocales = computed(() => {
-    return locales.value.filter((i) => i.code !== locale.value);
+const userImage = computed(() => {
+    const base64 = data.value?.user?.image;
+    return base64 ? base64 : "/LucideCircleUserRound.png";
 });
 
 // Navigation menu items
-const items = computed<DropdownMenuItem[]>(() =>
-    availableLocales.value.map((locale) => ({
-        label: locale.name,
-        onSelect: async () => setLocale(locale.code),
-    })),
-);
+const items = computed<DropdownMenuItem[]>(() => [
+    {
+        label: t("navigation.signOut"),
+        icon: "i-lucide-sign-out",
+        onSelect: handleSignOut,
+    },
+]);
+
+async function handleSignOut(): Promise<void> {
+    await signOut();
+}
 </script>
 
 <template>
-    <div class="flex justify-between gap-2 p-2 w-full z-50">
-        <DisclaimerButton variant="ghost" />
-        <div class="text-md md:text-4xl font-bold bg-gradient-to-r text-cyan-600 hover:text-cyan-600">
-            {{ "{{" }} t("navigation.app") {{ "}}" }}
-        </div>
-        <UDropdownMenu :items="items">
-            <UButton variant="ghost" :label="t('navigation.languages')" icon="i-lucide-languages">
-            </UButton>
-        </UDropdownMenu>
-    </div>
+    <NavigationBar>
+        <template #right>
+            <UDropdownMenu :items="items">
+                <UButton variant="ghost" color="neutral">
+                    <img :src="userImage" class="h-6 w-6 rounded-full" :alt="data?.user?.name || 'User'" />
+                </UButton>
+            </UDropdownMenu>
+        </template>
+    </NavigationBar>
 </template>

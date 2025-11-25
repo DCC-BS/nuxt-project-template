@@ -13,7 +13,7 @@
     },
     "files": {
         "ignoreUnknown": false,
-        "includes": ["**", "!.nuxt", "!.output", "!logs"]
+        "includes": ["**", "!.nuxt", "!.output", "!logs", "!tests"]
     },
     "formatter": {
         "enabled": true,
