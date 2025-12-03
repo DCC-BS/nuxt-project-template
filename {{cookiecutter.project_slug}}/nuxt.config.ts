@@ -9,6 +9,19 @@ export default defineNuxtConfig({
     alias: {
         "#shared": fileURLToPath(new URL("./shared", import.meta.url)),
     },
+    routeRules: {
+        "/api/ping": {
+            cors: true,
+            headers: {
+                "Cache-Control": "no-store",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET",
+                "Access-Control-Allow-Headers":
+                    "Origin, Content-Type, Accept, Authorization, X-Requested-With",
+                "Access-Control-Allow-Credentials": "true",
+            },
+        },
+    },
     runtimeConfig: {
         githubToken: process.env.GITHUB_TOKEN,
         apiUrl: process.env.API_URL,
@@ -17,6 +30,10 @@ export default defineNuxtConfig({
                 loglevel: process.env.LOG_LEVEL || "debug",
             },
         },
+    },
+    typescript: {
+        typeCheck: true,
+        strict: true,
     },
     // Define app head configuration
     app: {
