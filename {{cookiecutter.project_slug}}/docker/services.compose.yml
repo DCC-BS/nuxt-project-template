@@ -51,7 +51,7 @@ services:
     build:
       context: ..
       dockerfile: ./Dockerfile
-    env_file: "../.env"
+    env_file: ".env.backend"
     environment:
       - NUXT_API_URL=http://{{cookiecutter.project_slug}}-backend:8000
       - PORT=3000
