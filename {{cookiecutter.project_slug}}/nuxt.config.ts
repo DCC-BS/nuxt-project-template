@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         ["github:DCC-BS/nuxt-layers/backend_communication"],
         ["github:DCC-BS/nuxt-layers/health_check"],
         ["github:DCC-BS/nuxt-layers/logger"],
-        process.env.USE_FEEDBACK === "true"
+        process.env.USE_FEEDBACK !== "false"
             ? ["github:DCC-BS/nuxt-layers/feedback-control"]
             : undefined,
     ],
