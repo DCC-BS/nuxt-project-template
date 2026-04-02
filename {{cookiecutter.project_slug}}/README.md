@@ -4,7 +4,7 @@
 
 SMALL DESCRIPTION
 
-![GitHub License](https://img.shields.io/github/license/DCC-BS/{{cookiecutter.project_slug}) [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
+![GitHub License](https://img.shields.io/github/license/DCC-BS/{{cookiecutter.project_slug}}) [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
 
 ---
 

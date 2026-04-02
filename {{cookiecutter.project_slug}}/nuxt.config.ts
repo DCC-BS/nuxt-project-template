@@ -74,8 +74,10 @@ export default defineNuxtConfig({
             chunkSizeWarningLimit: 800,
             rollupOptions: {
                 output: {
-                    manualChunks: {
-                        "vue-vendor": ["vue", "vue-router"],
+                    manualChunks: (id) => {
+                        if (id.includes("vue") || id.includes("vue-router")) {
+                            return "vue-vendor";
+                        }
                     },
                 },
             },
