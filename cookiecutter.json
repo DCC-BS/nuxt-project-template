@@ -2,6 +2,7 @@
     "project_slug": "demo-app",
     "app_title": "Example application",
     "github_token": "YOUR_GITHUB_TOKEN",
+    "use_azure_auth": "no",
     "_copy_without_render": [
         "components/*vue",
         "pages/*vue",
