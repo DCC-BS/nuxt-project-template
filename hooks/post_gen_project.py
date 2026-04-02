@@ -30,3 +30,7 @@ def move_dir(src: str, target: str) -> None:
 
 if __name__ == "__main__":
     move_file(".env_template", ".env")
+    
+    if "{{ cookiecutter.use_azure_auth }}" != "yes":
+        remove_file(".env.azure.schema")
+        remove_file("docker/.env.azure.schema")
