@@ -32,7 +32,7 @@
         "@nuxt/ui": "^4.4.0",
         "@nuxtjs/i18n": "^10.2.1",
         "@pinia/nuxt": "^0.11.3",
-        "@varlock/proton-pass-plugin": "^0.0.3",
+        "@varlock/proton-pass-plugin": "^1.0.0",
         "@varlock/vite-integration": "^0.2.7",
         "giget": "^3.0.0",
         "nuxt": "^4.2.2",
