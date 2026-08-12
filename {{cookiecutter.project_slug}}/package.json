@@ -31,7 +31,7 @@
         "@iconify-json/lucide": "^1.2.85",
         "@nuxt/ui": "^4.4.0",
         "@nuxtjs/i18n": "^10.2.1",
-        "@pinia/nuxt": "^0.11.3",
+        "@pinia/nuxt": "^1.0.0",
         "@varlock/proton-pass-plugin": "^0.0.3",
         "@varlock/vite-integration": "^0.2.7",
         "giget": "^3.0.0",
