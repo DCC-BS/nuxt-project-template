@@ -37,7 +37,7 @@
         "giget": "^3.0.0",
         "nuxt": "^4.2.2",
         "openid-client": "^6.8.1",
-        "pinia": "^3.0.4",
+        "pinia": "^4.0.0",
         "pino": "^10.2.0",
         "tailwindcss": "^4.1.18",
         "ts-pattern": "^5.9.0",
