@@ -113,3 +113,27 @@ run = "bunx varlock run -- docker compose -f docker-compose.dev.yml up --build -
 description = "stop the dev Docker containers"
 dir = "{{config_root}}/docker"
 run = "bunx varlock run -- docker compose -f docker-compose.dev.yml down"
+
+# ── Cleanup ───────────────────────────────────────────────────────────────────
+
+[tasks."cleanup:layers"]
+description = "cleanup layer files"
+run = [
+    "rm -rf ./node_modules/.*c12",
+    "rm -rf ./node_modules/c12",
+]
+
+[tasks."cleanup:bun"]
+description = "cleanup cached files"
+run = [
+    "rm -rf ./node_modules",
+    "bun pm cache rm",
+]
+
+[tasks."cleanup:logs"]
+description = "remove log files"
+run = "rm -rf ./logs"
+
+[tasks."cleanup:test-results"]
+description = "remove test result artifacts"
+run = "rm -rf ./test-results"
