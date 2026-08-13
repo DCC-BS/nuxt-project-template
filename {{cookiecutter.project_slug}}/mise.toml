@@ -71,6 +71,13 @@ run = "bunx biome format --write"
 description = "check and fix linting issues"
 run = "bunx biome check --fix"
 
+[tasks.ci-check]
+description = "run CI checks"
+run = [
+    "bunx biome ci .",
+    "bunx vue-tsc --noEmit -p tsconfig.json"
+]
+
 # ── Testing ───────────────────────────────────────────────────────────────────
 
 [tasks."test:unit"]
