@@ -72,15 +72,6 @@ export default defineNuxtConfig({
             sourcemap: process.env.NODE_ENV !== "production",
             cssMinify: "lightningcss",
             chunkSizeWarningLimit: 800,
-            rollupOptions: {
-                output: {
-                    manualChunks: (id) => {
-                        if (id.includes("vue") || id.includes("vue-router")) {
-                            return "vue-vendor";
-                        }
-                    },
-                },
-            },
         },
     },
     runtimeConfig: {
